@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to left, rgb(14, 12, 46) 100%, rgb(47, 21, 139) 75%);
+}
+#topic{
+    color: white; 
+    border-right: 1px solid orangered; 
+    border-left:  1px solid orangered;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 150px;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#topic:hover{
+    color: rgb(0, 247, 255);
+    transition: 300ms;
+}
+.socialMediaLinks{
+    margin-top: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: 
+    linear-gradient(to bottom, rgb(14, 12, 46) 25%, rgb(47, 21, 139) 75%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.sm{
+    display: inline-block;
+    padding: 3px;
+    margin-right: 8px;
+}
+.sm i{
+    display: block;
+    font-size: xx-large;
+    padding: 20px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    border-color: black;
+    border-radius: 3px;
+    background-color: #fff;
+}
+#youtube{
+
+    color: rgb(255 0 0);
+    
+}
+#twitter{
+    color: rgb(29 161 242);
+}
+#instagram{
+   color:  #E1306C;
+}
+#github{
+    color: rgb(0, 0, 41);
+}
+.sm center a{
+    text-decoration: none;
+    font-size: medium;
+    font-family: cursive;
+    color: #fff;
+}
+#youtube:hover{
+    border-color: #FF0000;
+    color: #fff;
+    background-color:  #1b1b1b;
+    transition: 300ms;
+}
+#twitter:hover{
+    background-color: #1b1b1b;
+    border-color: rgb(20 161 242);
+    transition: 300ms;
+}
+#instagram:hover{
+    background-color: black;
+    border-color: #E1306C;
+    transition: 300ms;
+}
+#github:hover{
+    background-color: rgb(0, 0, 41);
+    color: #fff;
+    transition: 300ms;
+    border-color: rgb(0, 235, 243);
+}
+.sm center a:hover{
+    border-bottom: 2px solid  rgb(212, 191, 0);
+    border-top: 2px solid rgb(212, 191, 0);
+    border-radius: 4px;
+    transition: 100ms;
+}
