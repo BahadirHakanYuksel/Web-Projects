@@ -1,0 +1,149 @@
+#home{
+    grid-template-rows: 10rem auto;
+    gap: 1rem;
+}
+.home_top{
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 0 8rem 8rem ;
+    /* box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.432); */
+}
+.home_top > header:first-child{
+    font-size: 3rem;
+}
+.home_top > header:first-child > span{
+    color: var(--mnblue);
+}
+.home_top > header:nth-child(2){
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.home_top > header:nth-child(2) > span{
+    color: var(--mnblue);
+}
+
+
+
+.home_bottom{
+    display: grid;
+    grid-template-rows: 15rem auto ;
+}
+
+#homePromo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.home_promo_box{
+    background-color: rgb(216, 215, 215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px 1px grey;
+    cursor: default;
+}
+.home_promo_box:hover{
+    box-shadow: 0 3px 5px 1px var(--mnblue);
+}
+.home_promo_box > i{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, rgb(37, 122, 233), rgb(19, 78, 155));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.home_promo_box > span{
+    background: linear-gradient(to right, rgb(37, 122, 233), rgb(19, 78, 155));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+#homeFastMenu{
+    margin-top: 1rem;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-rows: 18% auto;
+}
+#homeFastMenu > header{
+    font-size: 2rem;
+    font-weight: 600;
+    /* background-color: rgba(58, 133, 184, 0.2); */
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+#homeFastMenu > header > i{
+    color: yellow;
+    margin-left: 1rem;
+}
+
+#fastMenuBoxs{
+    display: grid;
+    padding: 1rem 2rem;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+
+.fastMenu_box{
+    background-color: var(--mnblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    border-radius: 2rem;
+    box-shadow: 0 3px 5px white;
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+.fastMenu_box:hover{
+    background-color: rgb(18, 103, 214);
+    box-shadow: 0 3px 5px rgb(80, 80, 80);
+}
+
+#fastMenuBoxs > .takeNote > i{
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    font-size: 2.8rem;
+}
+
+#fastMenuBoxs > .goToMyNotes{
+    background-color: rgb(22, 93, 185);
+}
+#fastMenuBoxs > .goToMyNotes:hover{
+    background-color: rgb(8, 77, 167);
+}
+
+#fastMenuBoxs > .goToMyNotes > i{
+    position: absolute;
+    color: white;
+}
+
+#fastMenuBoxs > .goToMyNotes > i{
+    left: 2rem;
+    top: 3.6rem;
+    /* color: rgb(255, 60, 0); */
+}
+#fastMenuBoxs > .goToMyNotes > i:nth-child(2){
+    left: 4rem;
+    top: 2.6rem;
+    /* color: rgb(78, 0, 180); */
+}
+#fastMenuBoxs > .goToMyNotes > i:nth-child(3){
+    left: 6rem;
+    top: 1.6rem;
+    /* color: rgb(251, 255, 0); */
+}

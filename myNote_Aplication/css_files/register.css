@@ -1,0 +1,102 @@
+#register{
+    height: 40rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    padding: 2rem 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+#register > div{
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+#register > div > button{
+    width: 100%;
+    height: 4rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+#reg3 > img{
+    width : 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+#register > div > header{
+    font-size: 3rem;
+    padding: 1rem;
+    background: rgb(235,235,235);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+.reg1{
+    background-color: rgb(100, 111, 212);
+}
+.reg1 > button{
+    background-color: rgb(14, 49, 122);
+}
+.reg1 > button:hover{
+    background-color: rgb(4, 30, 85);
+}
+.reg2{
+    background-color: rgb(42, 184, 85);
+}
+.reg2 > button{
+    background-color: rgb(13, 71, 33);
+}
+.reg2 > button:hover{
+    background-color: rgb(2, 51, 19);
+}
+.input{
+    height: 4rem;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.input > input{
+    width: 100%;
+    height: 100%;
+    padding: 0 3rem 0 1rem;
+    font-size: 1.4rem;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.input > input:focus{
+    border: 2px solid rgb(46, 46, 46);
+    border-radius: 0.5rem;
+}
+.input > i{
+    position: absolute;
+    right: 1rem;
+    font-size: 1.2rem;
+    color: rgb(110, 110, 110);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.input > i:hover{
+    color: black;
+}
+
+#registerPromo{
+    background-color: rgb(225,225,225);
+    border-radius: 1rem;
+    color: rgb(37, 122, 233);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    word-spacing: 0.6rem;
+    letter-spacing: 0.2rem;
+    opacity: 1;
+    transition: 0.5s;
+}

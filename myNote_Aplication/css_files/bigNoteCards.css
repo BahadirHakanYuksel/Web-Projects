@@ -1,0 +1,223 @@
+#bigNoteCardSection{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+}
+#bigNoteCardMenu{
+    background-color: white;
+    width: 110rem;
+    height: 55rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 100% auto;
+    transition: 0.3s;
+}
+#closeTheBigNoteCardMenuBtn{
+    position: absolute;
+    width: 4rem;
+    height: 3.2rem;
+    right: 0;
+    top: 0;
+    border-radius: 0 0.8rem 0 2rem;
+    padding: 0.6rem 1rem;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#closeTheBigNoteCardMenuBtn:hover{
+    background-color: rgb(221, 9, 9);
+}
+
+
+#bncm_left{
+    display: grid;
+    grid-template-rows: 38rem auto;
+    gap: 2rem;
+    position: relative;
+}
+
+#bncmL_top{
+    display: grid;
+    grid-template-rows: 4.55rem auto;
+}
+
+#bigCardHeader{
+    font-size: 2.5rem;
+    color: var(--mnblue);
+    margin-bottom: 0.3rem;
+}
+#bigCardText{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.bigCardInput{
+    position: relative;
+    height: 100%;
+}
+.bigCardInput > span{
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    visibility: visible;
+    opacity: 1;
+}
+#bigCardText > .bigCardInput > span{
+    top: 0;
+    transform: translateY(0);
+    color: black;
+    font-size: 1.4rem;
+}
+.editCardInput{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    outline: 0;
+    resize: none;
+    background: transparent;
+    line-height: 2rem;
+}
+
+.bigCardInput  > .editCardInput::placeholder,
+.bigCardInput  > .editCardInput{
+    font-size: 2.5rem;
+}
+
+.bigCardInput  > .editCardInput{
+    color: var(--mnblue);
+}
+.bigCardInput  > .editCardInput::placeholder{
+    color: rgba(37, 122, 233, 0.7);
+}
+
+#bigCardText > .bigCardInput > .editCardInput,
+#bigCardText > .bigCardInput > .editCardInput::placeholder{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#bigCardText > .bigCardInput > .editCardInput::placeholder{
+    color: rgba(128, 128, 128, 0.8);
+}
+#bigCardText > .bigCardInput > .editCardInput{
+    color: black;
+}
+
+
+#bigCardText > .bigCardInput > .editCardInput{
+    padding: 0 1rem 0 0
+}
+#bigCardText > .bigCardInput > .editCardInput::-webkit-scrollbar{
+    width: 5px;
+}
+#bigCardText > .bigCardInput > .editCardInput::-webkit-scrollbar-thumb{
+    background-color: var(--mnblue);
+}
+#bigCardText > .bigCardInput > .editCardInput::-webkit-scrollbar-track{
+    background-color: lightgrey;
+}
+
+/* -------------------- */
+
+#bncmL_bottom{
+    display: grid;
+    grid-template-rows: auto 8rem;
+}
+
+#bncmL_bottom > header{
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+#changeCards{
+    width: 65rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.changeCard{
+    background-color: rgb(224, 224, 224);
+    padding: 0.6rem;
+    display: grid;
+    grid-template-rows : 2.5rem 4rem;
+    gap: 0.3rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 4px 1px rgba(68, 68, 68, 0.644);
+}
+.changeCard:hover{
+    box-shadow: 0 0 4px 1px var(--mnblue);
+}
+.changeCard > header{
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-bottom: 1px solid grey;
+}
+
+.changeCard > .changeInput{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+
+/* save button */
+
+
+#saveTheNote{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: var(--mnblue);
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 0 4px 2px white;
+    cursor: pointer;
+    font-weight: 600;
+}
+#saveTheNote:hover{
+    background-color: white;
+    box-shadow: 0 0 4px 2px var(--mnblue);
+    color: var(--mnblue);
+}
+#saveTheNote > i{
+    font-size: 2.8rem;
+    margin-bottom: 0.6rem;
+}

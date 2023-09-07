@@ -1,0 +1,259 @@
+input[type = 'file']{
+    display: none;
+}
+
+#account{
+    grid-template-rows: repeat(3,10rem);
+    padding-top: 3rem;
+    gap: 3rem;
+}
+
+.accountInputs{
+    display: grid;
+    background-color: red;
+    grid-template-rows: 4rem auto;
+}
+
+.accountInputs > header{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-left: 1rem;
+}
+
+.accountInputs > .accountInput{
+    width: 100%;
+    position: relative;
+}
+.accountInputs > .accountInput > input{
+    width: 100%;
+    height: 100%;
+    padding-right: 2rem;
+    border: 0;
+    background-color: rgb(194, 194, 194);
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.accountInputs > .accountInput > i{
+    position: absolute;
+    right: 2rem;
+    top: 6rem;
+    transform: translateY(-4rem);
+    font-size: 1.8rem;
+    color: rgb(92, 92, 92);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.accountInputs > .accountInput > i:hover{
+    color: rgb(51, 51, 51);
+}
+
+.accountBtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#accountSaveBtn{
+    background-color: var(--mnblue);
+    color: white;
+    height: 4rem;
+    width: 12rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1.4rem;
+}
+#accountSaveBtn:hover{
+    background-color: rgb(3, 180, 41);
+}
+
+#deleteAccountBtn{
+    background-color: rgb(185, 7, 7);
+    color: white;
+    transition: 0.15;
+    cursor: pointer;
+    height: 3.2rem;
+    border-radius: 0.3rem;
+    width: 12rem;
+}
+
+#deleteAccountBtn:hover{
+    background-color: rgb(199, 21, 21);
+}
+
+#deleteAccountMain{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    background-color: #4448;
+    display: none;
+    opacity: 0;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+}
+
+#deleteInfoMessage{
+    background-color: white;
+    width: 50rem;
+    height: 28rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#deleteInfoMessage > header{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#deleteInfoMessage > div{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#deleteInfoMessage > div > button{
+    height: 4.5rem;
+    width: 15rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#yesDeleteAccountBtn{
+    background-color: rgb(185, 14, 14);
+}
+
+#yesDeleteAccountBtn:hover{
+    background-color: rgb(163, 13, 13);
+}
+
+#noDeleteAccountBtn{
+    background-color: rgb(0, 138, 35);
+}
+
+#noDeleteAccountBtn:hover{
+    background-color: rgb(0, 109, 27);
+}
+
+#closeTheDeleteAccountMainBtn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(43, 43, 43, 0.815);
+    color: lightgrey;
+    border-radius: 0 0.2rem 0 0.2rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+#closeTheDeleteAccountMainBtn:hover{
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+}
+/* #profileImg_Saved_Div{
+    max-width: 12rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#profileImg_Saved_Div > .box1,
+#profileImg_Saved_Div > .box2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#profileImg_Saved_Div > .box1{
+    z-index: 1;
+}
+
+#selectPhoto{
+    background-color: rgb(24, 74, 209);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0.3rem;
+    transition: 0.2s;
+}
+#selectPhoto:hover{
+    background-color: rgb(0, 110, 255);
+}
+
+#selectPhoto > i{
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+#selectPhoto > span{
+    font-size: 1.2rem;
+}
+
+#profileImg_Saved_Div > .box2{
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profileImg_Saved_Div > .box2 > img{
+    width: 100%;
+    height: 100%;
+}
+
+#profileImg_Saved_Div > .box2 > label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 153, 255, 0.425);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#profileImg_Saved_Div > .box2:hover > label{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+} */
